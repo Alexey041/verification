@@ -41,7 +41,18 @@ resultArray = new string[countFind];
 PrintArray(array);
 FillArray(resultArray,array);
 Console.Write(" => ");
-PrintArray(resultArray);
+bool zeroFind = resultArray.Length > 0; 
+
+if (zeroFind)
+{
+    PrintArray(resultArray);
+}
+else
+{
+    PrintArray(resultArray);
+    Console.Write("]");
+}
+
 
 void FillArray(string[] resultArray, string[] array)
 {
