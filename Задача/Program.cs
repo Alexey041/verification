@@ -21,10 +21,10 @@ do
         for (int i = 0; i < arrayCopy.Length - 1; i++)
             arrayCopy[i] = array[i];
 
-        // добавить последнюю введенную строку в массив AS2
+        // добавить последнюю введенную строку в массив arrayCopy
         arrayCopy[size - 1] = input;
 
-        // перенаправить ссылку AS на AS2
+        // перенаправить ссылку array на arrayCopy
         array = arrayCopy;
     }
 
