@@ -29,3 +29,25 @@ do
     }
 
 } while (input != "");
+
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+        countFind++;
+}
+
+resultArray = new string[countFind];
+
+void FillArray(string[] resultArray, string[] array)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            resultArray[count] = array[i];
+            count++;
+        }       
+    }
+}
+
