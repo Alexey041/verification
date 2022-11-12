@@ -38,6 +38,11 @@ for (int i = 0; i < array.Length; i++)
 
 resultArray = new string[countFind];
 
+PrintArray(array);
+FillArray(resultArray,array);
+Console.Write(" => ");
+PrintArray(resultArray);
+
 void FillArray(string[] resultArray, string[] array)
 {
     int count = 0;
@@ -62,8 +67,3 @@ void PrintArray(string[] array)
             Console.Write($"{array[i]}]");
     }
 }
-
-PrintArray(array);
-FillArray(resultArray,array);
-Console.Write(" => ");
-PrintArray(resultArray);
